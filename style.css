@@ -7,31 +7,115 @@ h1, h2, h3 {
   letter-spacing: -1px;
 }
 
-.navbar {
+.navbar, .button {
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.image-text-section, .navbar, .section-text {
   display: flex;
+}
+
+.image-text-section, .navbar {
   flex-direction: row;
+}
+
+.image-text-section {
+  gap: 50px;
+}
+
+.section-text {
+  flex-direction: column;
+}
+
+.divider {
+  flex: 1;
+}
+
+.section-image {
+  flex: 2;
+}
+
+.section-text {
+  flex: 3;
+}
+
+.navbar {
+  align-items: center;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  backdrop-filter: blur(10px);
 
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .button {
   border: none;
   border-radius: 10px;
   margin-left: 15px;
-  padding: 5px 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.welcomescreen {
+  position: relative
+}
+
+.topcover {
+  object-fit: cover;
+  height: 800px;
+  width: 100%;
+  filter: brightness(50%);
+}
+
+.welcometext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+  text-align: center;
+}
+
+.welcometitle {
+  font-size: 104px;
+  letter-spacing: -5px;
+}
+
+.welcomecaption {
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.8)
+}
+
+.section-text {
+  margin-left: 50px;
+}
+
+.section-caption, .section-image {
+  margin-top: 50px;
+}
+
+.section-image {
+  margin-right: 50px;
+  border-radius: 15px;
+  height: 500px;
+  width: auto;
+  object-fit: cover;
+}
+
+.section-caption {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section-header {
+  font-size: 48px;
 }
 
 /* fix issue where 100% width is cutting off last button */
 #navbar-button4 {
     margin-right: 30px;
-}
-
-#navbar-divider {
-  flex: 1
 }
