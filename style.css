@@ -21,7 +21,7 @@ h1, h2, h3 {
 }
 
 .image-text-section {
-  gap: 50px;
+  gap: 100px;
 }
 
 .section-text {
@@ -58,17 +58,32 @@ h1, h2, h3 {
   padding: 10px 20px;
   font-size: 18px;
   background-color: rgba(255, 255, 255, 0.5);
+  transition: .2s;
+  text-decoration: none;
+}
+
+.button-hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transform: scale(1.1);
 }
 
 .welcomescreen {
   position: relative
 }
 
-.topcover {
+.topcoverhome, .topcover {
   object-fit: cover;
-  height: 800px;
   width: 100%;
   filter: brightness(50%);
+}
+
+.topcoverhome {
+  height: 800px;
+}
+
+.topcover {
+  height: 500px;
 }
 
 .welcometext {
