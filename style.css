@@ -7,24 +7,33 @@ h1, h2, h3 {
   letter-spacing: -1px;
 }
 
-.navbar, .button {
+p {
+  font-size: 18px;
+}
+
+.navbar, .white-button {
     color: white;
     backdrop-filter: blur(10px);
 }
 
-.image-text-section, .navbar, .section-text {
+.image-text-section, .navbar, .section-text, .text-only, .detail, .all-details {
   display: flex;
 }
 
-.image-text-section, .navbar {
+.image-text-section, .navbar, .detail {
   flex-direction: row;
+}
+
+.detail, .all-details {
+  gap: 20px;
+  align-items: center;
 }
 
 .image-text-section {
   gap: 100px;
 }
 
-.section-text {
+.section-text, .text-only, .all-details {
   flex-direction: column;
 }
 
@@ -54,12 +63,24 @@ h1, h2, h3 {
 .button {
   border: none;
   border-radius: 10px;
-  margin-left: 15px;
-  padding: 10px 20px;
+  padding: 15px 30px;
   font-size: 18px;
-  background-color: rgba(255, 255, 255, 0.5);
   transition: .2s;
   text-decoration: none;
+}
+
+.navbar-button {
+  margin-left: 15px;
+  padding: 10px 20px;
+}
+
+.white-button {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.black-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .button-hover {
@@ -83,7 +104,7 @@ h1, h2, h3 {
 }
 
 .topcover {
-  height: 500px;
+  height: 600px;
 }
 
 .welcometext {
@@ -96,9 +117,16 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.welcometitle, .welcometitle2 {
+  letter-spacing: -5px;
+}
+
 .welcometitle {
   font-size: 104px;
-  letter-spacing: -5px;
+}
+
+.welcometitle2 {
+  font-size: 64px;
 }
 
 .welcomecaption {
@@ -108,10 +136,19 @@ h1, h2, h3 {
 
 .section-text {
   margin-left: 50px;
+  align-items: flex-start;
 }
 
-.section-caption, .section-image {
+.text-only {
+  text-align: center;
+}
+
+.top {
   margin-top: 50px;
+}
+
+.gap {
+  margin-top: 20px;
 }
 
 .section-image {
@@ -130,7 +167,17 @@ h1, h2, h3 {
   font-size: 48px;
 }
 
+.logo {
+  height: 35px;
+  object-fit: contain;
+}
+
 /* fix issue where 100% width is cutting off last button */
 #navbar-button4 {
     margin-right: 30px;
+}
+
+#detail-num {
+  text-align: center;
+  flex: 0 0 20px;
 }
