@@ -24,11 +24,11 @@ p {
   flex-direction: row;
 }
 
-.paragraph-padding {
+.paragraph-padding, .image-text-section {
   justify-content: center;
 }
 
-.detail, .all-details, .image-text-section {
+.detail, .image-text-section {
   align-items: center;
 }
 
@@ -41,7 +41,9 @@ p {
 }
 
 .image-text-section {
-  gap: 100px;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .section-text, .text-only, .all-details {
@@ -62,11 +64,11 @@ p {
 }
 
 .section-image {
-  flex: 2;
+  flex: 0 0 auto;
 }
 
 .section-text {
-  flex: 3;
+  flex: 3 0 300px;
 }
 
 .navbar {
@@ -218,4 +220,12 @@ p {
 
 #blue {
   background-color: rgb(0, 157, 255);
+}
+
+#dark-blue {
+  background-color: rgb(25, 28, 199)
+}
+
+#big-logo {
+  height: 75px;
 }

@@ -10,7 +10,9 @@ function removeButtonAnimation() {
 
 buttons.forEach((button) => {
 
-    button.addEventListener("mouseover", addButtonAnimation);
-    button.addEventListener("mouseout", removeButtonAnimation);
+    if (!(button.classList.contains("button-hover"))) {
+        button.addEventListener("mouseover", addButtonAnimation);
+        button.addEventListener("mouseout", removeButtonAnimation);
+    }
 
 })
